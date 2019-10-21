@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .preloader-enc{
+            width:100%;
+            margin:0 auto;
+        }
+        .preloader{
+            margin: 10px auto;
+            width:50px;
+            height:50px;
+            border-radius:100%;
+            border: 2px solid #f3f3f3;
+            border-top:3px solid #f25a41;    
+            animation: spin 1s infinite linear;
+        }
+        .enc{
+            padding:10px;
+            width:250px;
+        }
+        @keyframes spin {
+            from{
+                transform: rotate(0deg);
+            }to{
+                transform: rotate(360deg);
+            }
+        }
+        .name{
+            font-size:18px;
+            color:red;
+            font-weight:bold;
+        }
+        .checked {
+            color: orange;
+        }
+        .hidden{
+            display: none;
+        }.score-enc{
+            display: none;
+            margin-top: 20px;
+        }
+        .btn{
+            width:100%;
+            color:white;
+            font-weight: bold;
+            background-color: #f25a41;
+            cursor:pointer;
+            padding-top:10px;
+            padding-bottom:10px;
+            text-align: center;
+            border-radius:5px;
+            outline: none;
+            transition-duration: 1s;
+            transition: ease-out;
+            font-size:14px;
+        }
+        a{
+            outline:none;
+            text-decoration: none;
+        }
+        .btn:hover{
+            background-color:red;
+        }
+        .rating{
+            display:flex;
+            margin-top:20px;
+            margin-bottom:20px;
+            flex-direction: row;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .rat-name{
+            width:40%;
+            font-weight:bold;
+            font-size:14px;
+        }
+        .rating-score{
+            padding-left: 30px;
+            font-weight: bold;
+            width:60%;
+        }
+        .trating-tool-enc{
+            padding-left: 20px;
+        }
+        .orating-tool-enc{
+            padding-left: 20px;
+        }
+        .star-ratings-sprite {
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+            font-size: 0;
+            height: 21px;
+            line-height: 0;
+            overflow: hidden;
+            text-indent: -999em;
+            width: 110px;
+            margin: 0 auto;
+            
+            
+        }
+        .star-ratings-sprite-rating {
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+            background-position: 0 100%;
+            float: left;
+            height: 21px;
+            display:block;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="enc">
+            <div class="name">
+                Shoperky
+            </div>
+            <div class="preloader-enc">
+                <div class="preloader">
+                </div>
+            </div>
+            <div class="score-enc">
+                <div class="rating">
+                    <div>Original rating</div>
+                    <div class="trating-tool-enc">
+                        <div class="star-ratings-sprite"><span style="width: 82%;" class="trating star-ratings-sprite-rating"></span></div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div>Modified rating</div>
+                    <div class="orating-tool-enc">
+                        <div class="star-ratings-sprite"><span style="width: 32%;" class="orating star-ratings-sprite-rating"></span></div>
+                    </div>
+                </div>
+                <a id="nav-id" href=""><div class="btn" id="navigate">Detailed analysis    &#8594;</div></a>
+            </div>
+        </div>
+    <script src="./js/popup.js"></script>
+    </body>
+
+</html>

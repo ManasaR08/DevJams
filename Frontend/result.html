@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoperky</title>
+        <link rel="icon" href="/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/main.css"></link>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/result.css"></link>
+        
+    </head>
+    <body>
+        <div class="container-fluid error">
+            <div class="close">&times</div>
+        </div>
+        <nav class="container-fluid">
+            <div class="logo">
+                <div class="logo-image-cnt"><img class="logo-img" src="/assets/images/logo.png"></div>
+                <div class="logo-name">Shoperky</div>
+            </div>
+            <div class="switch">
+                <div><input type="checkbox" style="margin-right: 10px;" id="switch"></div>
+                <div><label for="switch">Emotional review?</label></div> 
+            </div>
+        </nav>
+        <div class="preloader-enc">
+            <div class="preloader">
+            </div>
+        </div>
+        <div class="container main-content">
+            <div class="row">
+                <div class="col-sm-6 col-lg-2">
+                    <img src="/assets/images/product.png" alt="" class="item-img">
+                </div>
+                <div class="col-sm-6 col-lg-10">
+                    <a href="https://amazon.com/dp/" id="product-link" data-toggle="tooltip" id="trating-tool" data-placement="bottom" title="82%"><div class="item-name">A420 777 Some random product</div></a>
+                    <div class="item-seller"></div>
+                </div>
+            </div>
+            <div class="container product-enc">
+                <div class="reviews-enc">
+                    <div class="review-enc-header">Sorted Reviews</div>
+                    <ul class="nav nav-pills">
+                        <li class="pill nav-item" onclick="switchSome(0);return;">
+                            <a class="nav-link active">Real reviews</a>
+                        </li>
+                        <li class="pill nav-item" onclick="switchSome(1);return;">
+                            <a class="nav-link">Fake reviews</a>
+                        </li>
+                        <li class="pill nav-item" onclick="switchSome(2);return;">
+                            <a class="nav-link">Helpful reviews</a>
+                        </li>
+                    </ul>
+                    <div class="reviews">
+                        <div class="card">
+                            <div class="card-header">
+                                Ken Adams
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+                            <div class="card-body review">
+                                <div><img src="assets/images/product.png" class="review-img"></div>
+                                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo ex, id minus voluptas earum officia quod ut accusamus voluptatibus voluptate. Dolore eaque recusandae incidunt, cupiditate autem ipsum adipisci officiis.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Ken Adams
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+                            <div class="card-body review">
+                                <div><img src="assets/images/product.png" class="review-img"></div>
+                                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo ex, id minus voluptas earum officia quod ut accusamus voluptatibus voluptate. Dolore eaque recusandae incidunt, cupiditate autem ipsum adipisci officiis.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Ken Adams
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+                            <div class="card-body review">
+                                <div><img src="assets/images/product.png" class="review-img"></div>
+                                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo ex, id minus voluptas earum officia quod ut accusamus voluptatibus voluptate. Dolore eaque recusandae incidunt, cupiditate autem ipsum adipisci officiis.</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Ken Adams
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+                            <div class="card-body review">
+                                <div><img src="assets/images/product.png" class="review-img"></div>
+                                <div class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo ex, id minus voluptas earum officia quod ut accusamus voluptatibus voluptate. Dolore eaque recusandae incidunt, cupiditate autem ipsum adipisci officiis.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ratings-enc">
+                    <div class="rating">
+                        <div>Original rating</div>
+                        <div class="trating-tool-enc">
+                            <a href="#" data-toggle="tooltip" id="trating-tool" data-placement="bottom" title="82%">
+                                <div class="star-ratings-sprite"><span style="width: 82%;" class="trating star-ratings-sprite-rating"></span></div>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div>Modified rating</div>
+                        <div class="orating-tool-enc">
+                            <a href="#" data-toggle="tooltip" id="orating-tool" data-placement="bottom" title="32%">
+                                <div class="star-ratings-sprite"><span style="width: 32%;" class="orating star-ratings-sprite-rating"></span></div>
+                                </a>
+                    </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <script src="assets/js/result.js"></script>
+    </body>
+</html>

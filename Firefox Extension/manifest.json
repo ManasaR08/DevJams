@@ -1,0 +1,17 @@
+{
+    "name":"Shoperky",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Curb fake reviews",
+    "background": {
+        "scripts": ["./js/background.js"],
+        "persistent": true
+    },
+    "permissions":["activeTab","tabs"],
+    "icons":{
+        "128":"./images/logo.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
